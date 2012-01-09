@@ -1,2 +1,10 @@
 Overview
-=======
+========
+Path 2.0's iPhone app has a really neat menu/navigation system.  This is a simple example of how to add a similar menu menu system to your iPhone app.  Just run the example and click on the nice red button.
+
+The main menu code for expanding & collapsing an array of menu items/buttons (views) is in the MenuBurst.m/.h files. Looking at the usage example in ViewController.m should be pretty self explanitory. However if you have any questions feel free to reach out to me on twitter (@tobins).
+
+n'joy!
+
+Tobin // @tobins // http://tob.in
+
