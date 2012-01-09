@@ -7,8 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "MenuBurst.h"
 
 @implementation ViewController
+
+@synthesize button1;
+@synthesize button2;
+@synthesize button3;
+@synthesize button4;
+@synthesize button5;
+@synthesize main;
+@synthesize menuBurst;
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,13 +30,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // initialize MenuBurst object with an array of buttons.
+    NSArray* buttons = [NSArray arrayWithObjects:button1, button2, button3, button4, button5, nil];
+    
+    self.menuBurst = [[[MenuBurst alloc] initWithMenuItems:buttons mainButton:self.main radius:120.0] autorelease];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    self.button1 = nil;
+    self.button2 = nil;
+    self.button3 = nil;
+    self.button4 = nil;
+    self.button5 = nil;
+    self.main = nil;    
+    self.menuBurst = nil;
     // e.g. self.myOutlet = nil;
 }
 
