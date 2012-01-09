@@ -73,8 +73,22 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    // Only support portriat orientation for now
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction) touchMenuItem:(id)sender {
+    
+    // if the menu is expanded, then collapse it when an menu item is touched.
+    UIAlertView *message = [[[UIAlertView alloc] initWithTitle:@"Menu Item Touched"
+                                                      message:[(UIButton *)sender currentTitle]
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil] autorelease];
+    [message show];
+    
+    if( self.menuBurst.expanded ) {
+        [self.menuBurst collapse];
+    }
+}
 @end

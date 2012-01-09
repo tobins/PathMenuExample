@@ -29,4 +29,6 @@
 
 @property (retain) MenuBurst* menuBurst;
 
+- (IBAction) touchMenuItem:(id)sender;
+
 @end
