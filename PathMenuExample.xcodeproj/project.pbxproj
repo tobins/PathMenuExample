@@ -15,7 +15,7 @@
 		AB0A2A9514BB6C3E0009E3BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A2A9414BB6C3E0009E3BE /* AppDelegate.m */; };
 		AB0A2A9814BB6C3E0009E3BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A2A9714BB6C3E0009E3BE /* ViewController.m */; };
 		AB0A2A9B14BB6C3E0009E3BE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0A2A9914BB6C3E0009E3BE /* ViewController.xib */; };
-		AB0A2AC714BB6F4A0009E3BE /* MenuBurst.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A2AC614BB6F4A0009E3BE /* MenuBurst.m */; };
+		AB0A2AC714BB6F4A0009E3BE /* ExpandableNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0A2AC614BB6F4A0009E3BE /* ExpandableNavigation.m */; };
 		AB0A2AD614BB6F720009E3BE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0A2AC814BB6F720009E3BE /* background.png */; };
 		AB0A2AD714BB6F720009E3BE /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0A2AC914BB6F720009E3BE /* background@2x.png */; };
 		AB0A2AD814BB6F720009E3BE /* comment-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0A2ACA14BB6F720009E3BE /* comment-button.png */; };
@@ -47,8 +47,8 @@
 		AB0A2A9614BB6C3E0009E3BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AB0A2A9714BB6C3E0009E3BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AB0A2A9A14BB6C3E0009E3BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		AB0A2AC514BB6F4A0009E3BE /* MenuBurst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBurst.h; sourceTree = "<group>"; };
-		AB0A2AC614BB6F4A0009E3BE /* MenuBurst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBurst.m; sourceTree = "<group>"; };
+		AB0A2AC514BB6F4A0009E3BE /* ExpandableNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableNavigation.h; sourceTree = "<group>"; };
+		AB0A2AC614BB6F4A0009E3BE /* ExpandableNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableNavigation.m; sourceTree = "<group>"; };
 		AB0A2AC814BB6F720009E3BE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		AB0A2AC914BB6F720009E3BE /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		AB0A2ACA14BB6F720009E3BE /* comment-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-button.png"; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				AB0A2AA114BB6C7F0009E3BE /* Images */,
-				AB0A2AC514BB6F4A0009E3BE /* MenuBurst.h */,
-				AB0A2AC614BB6F4A0009E3BE /* MenuBurst.m */,
+				AB0A2AC514BB6F4A0009E3BE /* ExpandableNavigation.h */,
+				AB0A2AC614BB6F4A0009E3BE /* ExpandableNavigation.m */,
 				AB0A2A9314BB6C3E0009E3BE /* AppDelegate.h */,
 				AB0A2A9414BB6C3E0009E3BE /* AppDelegate.m */,
 				AB0A2A9614BB6C3E0009E3BE /* ViewController.h */,
@@ -236,7 +236,7 @@
 				AB0A2A9114BB6C3E0009E3BE /* main.m in Sources */,
 				AB0A2A9514BB6C3E0009E3BE /* AppDelegate.m in Sources */,
 				AB0A2A9814BB6C3E0009E3BE /* ViewController.m in Sources */,
-				AB0A2AC714BB6F4A0009E3BE /* MenuBurst.m in Sources */,
+				AB0A2AC714BB6F4A0009E3BE /* ExpandableNavigation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class MenuBurst;
+@class ExpandableNavigation;
 
 @interface ViewController : UIViewController {
     UIButton* button1;
@@ -17,7 +17,7 @@
     UIButton* button4;
     UIButton* button5;
     UIButton* main;
-    MenuBurst* menuBurst;
+    ExpandableNavigation* navigation;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *button1;
@@ -27,7 +27,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *button5;
 @property (nonatomic, retain) IBOutlet UIButton *main;
 
-@property (retain) MenuBurst* menuBurst;
+@property (retain) ExpandableNavigation* navigation;
 
 - (IBAction) touchMenuItem:(id)sender;
 

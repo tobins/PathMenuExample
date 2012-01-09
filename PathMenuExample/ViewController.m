@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MenuBurst.h"
+#import "ExpandableNavigation.h"
 
 @implementation ViewController
 
@@ -17,7 +17,7 @@
 @synthesize button4;
 @synthesize button5;
 @synthesize main;
-@synthesize menuBurst;
+@synthesize navigation;
 
 - (void)didReceiveMemoryWarning
 {
@@ -31,10 +31,10 @@
 {
     [super viewDidLoad];
     
-    // initialize MenuBurst object with an array of buttons.
+    // initialize ExpandableNavigation object with an array of buttons.
     NSArray* buttons = [NSArray arrayWithObjects:button1, button2, button3, button4, button5, nil];
     
-    self.menuBurst = [[[MenuBurst alloc] initWithMenuItems:buttons mainButton:self.main radius:120.0] autorelease];
+    self.navigation = [[[ExpandableNavigation alloc] initWithMenuItems:buttons mainButton:self.main radius:120.0] autorelease];
 }
 
 - (void)viewDidUnload
@@ -47,8 +47,7 @@
     self.button4 = nil;
     self.button5 = nil;
     self.main = nil;    
-    self.menuBurst = nil;
-    // e.g. self.myOutlet = nil;
+    self.navigation = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -87,8 +86,8 @@
                                             otherButtonTitles:nil] autorelease];
     [message show];
     
-    if( self.menuBurst.expanded ) {
-        [self.menuBurst collapse];
+    if( self.navigation.expanded ) {
+        [self.navigation collapse];
     }
 }
 @end
