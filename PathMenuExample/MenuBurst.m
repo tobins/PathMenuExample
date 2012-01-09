@@ -3,7 +3,7 @@
 //  PathMenuExample
 //
 //  Created by Tobin Schwaiger-Hastanan on 1/8/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Tobin Schwaiger-Hastanan. All rights reserved.
 //
 
 #import "MenuBurst.h"
