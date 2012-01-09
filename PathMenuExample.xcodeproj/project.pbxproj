@@ -111,9 +111,9 @@
 		AB0A2A8A14BB6C3E0009E3BE /* PathMenuExample */ = {
 			isa = PBXGroup;
 			children = (
+				AB0A2AA114BB6C7F0009E3BE /* Images */,
 				AB0A2AC514BB6F4A0009E3BE /* MenuBurst.h */,
 				AB0A2AC614BB6F4A0009E3BE /* MenuBurst.m */,
-				AB0A2AA114BB6C7F0009E3BE /* Images */,
 				AB0A2A9314BB6C3E0009E3BE /* AppDelegate.h */,
 				AB0A2A9414BB6C3E0009E3BE /* AppDelegate.m */,
 				AB0A2A9614BB6C3E0009E3BE /* ViewController.h */,
@@ -346,6 +346,7 @@
 				AB0A2AA014BB6C3E0009E3BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
