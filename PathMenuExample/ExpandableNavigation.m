@@ -58,19 +58,20 @@
     transition = YES;
     
     [UIView animateWithDuration:self.speed animations:^{
-        self.mainButton.transform = CGAffineTransformMakeRotation( 45.0 * 0.0174532925 );
+        self.mainButton.transform = CGAffineTransformMakeRotation( 45.0 * M_PI/180 );
     }];
     
     for (UIView* view in self.menuItems) {
         int index = [self.menuItems indexOfObject:view];
-        CGFloat indexOverCount = ((CGFloat)index/(self.menuItems.count-1));
-        CGFloat rad =(1.0 - indexOverCount) * 90.0 * 0.0174532925;
+        CGFloat oneOverCount = self.menuItems.count<=1?1.0:(1.0/(self.menuItems.count-1));
+        CGFloat indexOverCount = index * oneOverCount;
+        CGFloat rad =(1.0 - indexOverCount) * 90.0 * M_PI/180;
         CGAffineTransform rotation = CGAffineTransformMakeRotation( rad );
-        CGFloat x = (self.radius + (self.bounce * self.radius)) * rotation.a;
-        CGFloat y = (self.radius + (self.bounce * self.radius)) * rotation.c;
+        CGFloat x = (self.radius + self.bounce * self.radius) * rotation.a;
+        CGFloat y = (self.radius + self.bounce * self.radius) * rotation.c;
         CGPoint center = CGPointMake( view.center.x + x , view.center.y + y);
         [UIView animateWithDuration: self.speed
-                              delay: (self.speed * indexOverCount)
+                              delay: self.speed * indexOverCount
                             options: UIViewAnimationOptionCurveEaseIn
                          animations:^{
                              view.center = center;
@@ -78,8 +79,8 @@
                          completion:^(BOOL finished){
                              [UIView animateWithDuration:self.bounceSpeed
                                               animations:^{
-                                                  CGFloat x = (self.bounce * self.radius) * rotation.a;
-                                                  CGFloat y = (self.bounce * self.radius) * rotation.c;
+                                                  CGFloat x = self.bounce * self.radius * rotation.a;
+                                                  CGFloat y = self.bounce * self.radius * rotation.c;
                                                   CGPoint center = CGPointMake( view.center.x - x , view.center.y - y);
                                                   view.center = center;
                                               }];
@@ -100,7 +101,8 @@
     
     for (UIView* view in self.menuItems) {
         int index = [self.menuItems indexOfObject:view];
-        CGFloat indexOverCount = ((CGFloat)index/(self.menuItems.count-1));
+        CGFloat oneOverCount = self.menuItems.count<=1?1.0:(1.0/(self.menuItems.count-1));
+        CGFloat indexOverCount = index * oneOverCount;
         [UIView animateWithDuration:self.speed
                               delay:(1.0 - indexOverCount) * self.speed
                             options: UIViewAnimationOptionCurveEaseIn
