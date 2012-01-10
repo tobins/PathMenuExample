@@ -46,7 +46,12 @@
 }
 
 - (id)init {
-    return [self initWithMenuItems:nil mainButton:nil radius:32.0]; 
+    // calling the default init method is not allowed, this will raise an exception if it is called.
+    if( self = [super init] ) {
+        [self release];
+        [self doesNotRecognizeSelector:_cmd];
+    }
+    return nil;
 }
 
 - (void) expand {

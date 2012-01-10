@@ -80,10 +80,10 @@
     
     // if the menu is expanded, then collapse it when an menu item is touched.
     UIAlertView *message = [[[UIAlertView alloc] initWithTitle:nil
-                                                      message:[(UIButton *)sender currentTitle]
-                                                     delegate:nil
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil] autorelease];
+                                                       message:[(UIButton *)sender currentTitle]
+                                                      delegate:nil
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil] autorelease];
     [message show];
     
     if( self.navigation.expanded ) {
